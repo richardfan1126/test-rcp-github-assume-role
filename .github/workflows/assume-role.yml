@@ -15,4 +15,5 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::191072206499:role/tmp-github
+          aws-region: us-east-1
       - run: aws sts get-caller-identity
